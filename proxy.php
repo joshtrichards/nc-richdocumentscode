@@ -396,7 +396,7 @@ do {
 		echo "ERROR ! $error\n";
 		debug_log("error on chunk: $error");
 		break;
-	} elseif($chunk === '') {
+	} elseif ($chunk === '') {
 		debug_log("empty chunk last data");
 		if ($parsingHeaders) {
 			errorExit("No content in reply from coolwsd. Is SSL enabled in error ?");
